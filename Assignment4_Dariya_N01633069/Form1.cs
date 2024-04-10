@@ -145,7 +145,7 @@ namespace Assignment4_Dariya_N01633069
                             textBox2.Text = account.CurrentBalance.ToString(); // Update the text box with the new current balance
                         }
 
-                        // Delete the corresponding record from the database
+                        
                         dbContext.TransactionHistories.Remove(transaction);
                         dbContext.SaveChanges();
 
@@ -260,7 +260,7 @@ namespace Assignment4_Dariya_N01633069
             }
             else
             {
-                // Handle invalid input for amount (optional)
+               
                 MessageBox.Show("Invalid amount input");
                 return;
             }
@@ -272,7 +272,7 @@ namespace Assignment4_Dariya_N01633069
             }
             else
             {
-                // Handle invalid input for date (optional)
+                
                 MessageBox.Show("Invalid date input");
                 return;
             }
